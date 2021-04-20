@@ -6,7 +6,7 @@
   
   const chronos = (year, month, day) => {
     let daysCount = year * DaysInYear + month * DaysInMonth + day;
-    daysCount += getDays(month > 2 ? year : year - 1);
+    daysCount += getDays(month > 2 ? year-1 : year - 1);
     return Days_Week[daysCount % 7];
   };
   
